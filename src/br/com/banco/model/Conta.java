@@ -4,13 +4,13 @@ import br.com.banco.enums.TipoConta;
 
 public abstract class Conta {
 
+    public static final double  LIMITE_SAQUE_DIARIO = 1200.00;
     protected int numero;
     protected String agencia;
     protected String nomeCliente;
-    protected double saldo;
-    protected double saqueDiario;
+    public double saldo;
+    public double saqueDiario;
     protected TipoConta tipo;
-    protected static final double LIMITE_SAQUE_DIARIO = 1200.00;
 
     public Conta(int numero, String agencia, String nomeCliente, TipoConta tipo){
         this.numero = numero;
